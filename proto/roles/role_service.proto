@@ -1,0 +1,10 @@
+syntax = "proto3";
+package ksuser;
+
+option go_package = "ksuser/pb/roles;roles";
+
+import "roles/role_message.proto";
+
+service RolesService {
+  rpc Create(Role) returns (Role) {}
+}
